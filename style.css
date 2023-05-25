@@ -1,0 +1,45 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.left-sidebar {
+  width: 20%;
+  background-color: greenyellow;
+  height: 100%;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+.main-content {
+  width: 80%;
+  background-color: gray;
+  height: 100%;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+.right-sidebar {
+  width: 20%;
+  background-color: lightskyblue;
+  height: 100%;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 1080px) {
+  .left-sidebar {
+    display: none;
+  }
+} /*for desktop */
+
+@media screen and (max-width: 480px) {
+  .right-sidebar {
+    display: none;
+  }
+}
